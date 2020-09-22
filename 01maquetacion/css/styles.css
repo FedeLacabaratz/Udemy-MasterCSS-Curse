@@ -10,6 +10,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Fajala";
+  src: url("../css/fonts/FjallaOne-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Icons";
+    src: url("../css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+        url("../css//fonts/websymbols-regular-webfont.eot");
+    src: url("../css/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../css/fonts/websymbols-regular-webfont.woff") format("woff"),
+      url("../css/fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 /*Estilos generales*/
 * {
   padding: 0px;
@@ -70,6 +89,33 @@ input[type="reset"]:active,
 button:active {
     box-shadow: 0px 0px 3px gray inset;
     text-shadow: 0px 0px 1px #ccc;
+}
+
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #285616;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #529125;
+    text-decoration: none;
+}
+
+.icon {
+    font-family: "Icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
 }
 
 /*Cabecera*/
@@ -191,16 +237,19 @@ button:active {
 
 /*Contenido*/
 #content {
+    font-family: sans-serif, Arial, Helvetica;
     width: 1250px;
     min-height: 1100px;
     margin: 0px auto;
 }
 
 /*Barra lateral*/
-#aside {
+#aside, #frase {
     width: 200px;
     float: left;
-    margin: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: -2px 2px 2px #ccc;
@@ -220,7 +269,7 @@ button:active {
 
 #aside .widget:last-child {
     border-bottom: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #aside h3 {
@@ -230,8 +279,139 @@ button:active {
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-bottom: 15px;
     background-color: #f2f3f2;
     border: 1px solid #ccc;
     border-left: none;
     border-right: none;
+}
+
+#aside > div:nth-child(2) h3 {
+    color: #0c73f2;
+}
+
+#aside > div:nth-child(3) h3 {
+    color: #9b2422;
+}
+
+/*Formularios barra lateral*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a {
+    display: block;
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#aside input,
+#aside label {
+    margin: 0px auto;
+    text-align: center;
+}
+
+#aside li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+#frase {
+    width: 180px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+/*Secciones*/
+#sections {
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 30px;
+}
+
+#sections .titulo {
+    font-family: "Fajala";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sections section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .date {
+    color: gray;
+    font-size: 14px;;
+}
+
+#sections .stickerone,
+#sections .stickertwo {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .stickertwo {
+    margin-left: 860px;
+}
+
+#backend > h2 {
+    color: #9b2422;
+}
+
+#instructor > h2 {
+    color: #d69d2a;
+}
+
+#history {
+    float: right;
+    margin: 20px;
+    margin-right: 30px;
+}
+
+/*Footer*/
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
 }
