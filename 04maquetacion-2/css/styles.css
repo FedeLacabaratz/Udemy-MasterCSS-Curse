@@ -44,6 +44,11 @@ body {
     font-family: "WebSymbolsRegular";
 }
 
+.clearfix {
+    float: none;
+    clear: both;
+}
+
 /*Cabecera*/
 
 #header {
@@ -207,7 +212,7 @@ aside h3:first-child {
 #search {
     width: 90%;
     height: 30px;
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: white;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -248,6 +253,10 @@ aside h3:first-child {
     padding-top: 2px;
     background-color: white;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), -3px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px  rgba(0, 0, 0, 0.3) inset;
+}
+
+.aside-box:last-child {
+    height: 312px;
 }
 
 #login input[type="email"],
@@ -304,6 +313,7 @@ aside h3:first-child {
     font-weight: lighter;
     margin-left: 21.5px;
     margin-bottom: 14px;
+    transition: all 200ms;
 }
 
 #login input[type="button"]:hover,
@@ -311,7 +321,6 @@ aside h3:first-child {
 #login input[type="reset"]:hover,
 #login button:hover {
     box-shadow: 0px 0px 3px gray;
-    transition: all 200ms;
 }
 
 #login a {
@@ -344,6 +353,181 @@ aside h3:first-child {
     color: #333;
     text-decoration: none;
     font-size: 20px;
-    margin: 100px auto;
+    margin: 135px auto;
     text-align: center;
+}
+
+/*Articulos*/
+#articles {
+    width: 920px;
+    float: left;
+}
+
+#articles h2 {
+    display: block;
+    width: 97.9%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url('./img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, -1px 2px 1px #393d3f, -2px 2px 2px #393d3f;
+    margin: 0px auto;
+    margin-left: 20px;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+#articles article {
+    width: 95.5%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    margin-left: 20px;
+    padding: 10px;
+    font-family: "TrebuchetMS";
+    background-color: white;
+    color: black;
+    box-shadow: -2px 2px 2px #ddd;
+}
+
+#articles article h4 {
+    display: block;
+    font-size: 23px;
+    margin: 3px;
+}
+
+#articles article h4 a {
+    text-decoration: none;
+    color: #00538c;
+}
+
+#articles article h4 a:hover {
+    text-decoration: underline;
+}
+
+#articles .data {
+    float: right;
+    background-color: #393d3f;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    margin: -11px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#articles .data span {
+    margin: 6px;
+}
+
+#articles article p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#articles #blog {
+    height: 50px;
+    margin-top: 20px;
+    line-height: 55px;
+    text-align: center;
+}
+
+#blog a {
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #00538c;
+    text-decoration: none;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
+
+/*Footer*/
+#footer {
+    width: 100%;
+    height: 445px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap > div {
+    float: left;
+    width: 320px;
+    height: 25%;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+
+#footer a {
+    text-decoration: none;
+    color: #37bcf9;
+    transition: all 300ms;
+}
+
+#footer h5 {
+    display: block;
+    background: url('./img/pxgray.png'), white;
+    height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 30px;
+    line-height: 45px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#footer ul {
+    text-align: left;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#footer ul li {
+    width: 93%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    list-style-type: square;
+}
+
+#footer ul li a {
+    display: block;
+    height: 30px;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img {
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+#footer #browsers img {
+    width: 45px;
+}
+
+#footer #author {
+    margin-top: 10px;
 }
