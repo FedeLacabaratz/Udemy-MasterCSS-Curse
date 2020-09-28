@@ -276,6 +276,9 @@ body {
   font-weight: bold;
   text-align: center;
   color: #00538c;
+  margin: 0px auto;
+  margin-left: 2px;
+  margin-right: 2px;
   transition: all 300ms;
 }
 
@@ -658,7 +661,7 @@ aside h3:first-child {
   float: left;
   width: 320px;
   height: 25%;
-  margin: 40px;
+  margin: 47px;
   text-align: center;
   color: white;
   font-family: "TrebuchetMS";
