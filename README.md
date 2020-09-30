@@ -2,7 +2,7 @@
 
 ## Subjects included in this repository:
 
-- HTML & CSS
+- HTML5 & CSS3
 - Responsive Design
 - Animations in CSS
 - SASS
