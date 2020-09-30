@@ -1,14 +1,26 @@
 body {
+    --rojo: red; /*Agrego una variable al body para poder usarla a futuro en el documento*/
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 #layout {
+    display: flex;
+    /*
+    flex-direction: row;
+    flex-wrap: wrap;
+    */
+    flex-flow: row wrap; /*Esta es equivalente a las dos de arriba*/
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 500px;
     border: 3px solid black;
     padding: 5px;
 }
 
 .caja {
+    flex-grow: 1; /*Cada elemento se adapta para ser equitativo en las dimensiones con la linea en la que esta, de ser demasiado chica la linea pasaria a una linea siguiente y tomaria todo el espacio, si bajan dos objetos se darian mitad y mitad y asi... se adapta (Es necesario cuando usamos flex basis para hacer al contenedor flexible)*/
+    /*flex-basis: calc(100% / 3 - 68px); /*Es como darle widht= 33.33% a cada caja y la caja orange al 100%*/
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -20,17 +32,25 @@ body {
 }
 
 .red {
-    background-color: red;
+    /*width: 25%;*/
+    /*flex-basis: calc(100% / 3); Se puede aplicar un calculo para darle una dimension en este caso width a cada caja individualmente*/
+    align-self: flex-start; /*Es un alineador para si mismo, equivalente al align-items pero ese es global par ordenar todas las cajas. Este seria por cada caja*/
+    background-color: var(--rojo); /*aplico la variable para darle color a esta celda*/
 }
 
 .green {
+    /*margin-top: 8%; /*Esto fue para generar una especie de escalera*/
+    align-self: center;
     background-color: green;
 }
 
 .blue {
+    align-self: center;
     background-color: blue;
 }
 
 .orange {
+    /*flex-basis: 100%;*/
+    align-self: flex-end;
     background-color: orange;
 }
