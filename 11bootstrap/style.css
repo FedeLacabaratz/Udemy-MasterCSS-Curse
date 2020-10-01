@@ -30,3 +30,12 @@ footer {
         height: auto;
     }
 }
+
+#slider {
+    height: 450px;
+    overflow: hidden;
+}
+
+#slider img {
+    height: 450px;
+}
