@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Máster en CSS: Bootstrap</title>
   </head>
@@ -16,42 +16,74 @@
     </div>
     -->
 
-    <div class="container">
+    <div class="container border">
         <div class="row">
             <header id="header" class="col-12 bg-primary text-white p-2 pl-5">
                 <h1>Máster en CSS: Bootstrap</h1>
             </header>
-            <nav id="menu" class="col-12 bg-secondary text-white">
+            <nav id="menu" class="col-12 bg-secondary text-white d-none d-sm-none d-md-block">
                 <ul class="row w-50">
-                    <li class="col">Inicio</li>
-                    <li class="col">Página 1</li>
-                    <li class="col">Página 2</li>
-                    <li class="col">Página 3</li>
-                    <li class="col">Contacto</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Inicio</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Página 1</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Página 2</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Página 3</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Contacto</li>
                 </ul>
             </nav>
             <section id="content" class="col-12">
                 <div class="row">
-                    <section id="products" class="col-9 border">
+                    <section id="products" class="col-12 col-sm-12 col-md-9 border">
                         <h2>Productos</h2>
                         <hr>
-                        <div class="items row">
-                            <div class="item col-3 m-3 bg-primary">producto</div>
-                            <div class="item col-3 m-3 bg-warning">producto</div>
-                            <div class="item col-3 m-3 bg-danger">producto</div>
-                            <div class="item col-3 m-3 bg-primary">producto</div>
-                            <div class="item col-3 m-3 bg-warning">producto</div>
-                            <div class="item col-3 m-3 bg-danger">producto</div>
-                            <div class="item col-3 m-3 bg-primary">producto</div>
-                            <div class="item col-3 m-3 bg-warning">producto</div>
-                            <div class="item col-3 m-3 bg-danger">producto</div>
+                        <div class="items">
+                            <div class="row">
+                                <div class="item col col-lg col-sm-12 bg-primary">producto</div>
+                                <div class="item col col-lg col-sm-6 bg-warning">producto</div>
+                                <div class="item col col-lg col-sm-6 bg-danger">producto</div>
+                            </div>
+                            <div class="row">
+                                <div class="item col m-2 bg-primary">producto</div>
+                                <div class="item col m-2 bg-warning">producto</div>
+                                <div class="item col m-2 bg-danger">producto</div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="item col m-2 bg-primary">producto</div>
+                                <div class="item col m-2 bg-warning">producto</div>
+                                <div class="item col m-2 bg-danger">producto</div>
+                                <div class="item col-4 m-2 bg-success">producto</div>
+                            </div>
+                            <div class="row mt-1 justify-content-between">
+                                <div class="item col-3 m-2 bg-primary">producto</div>
+                                <div class="item col-3 m-2 bg-success">producto</div>
+                                <div class="item col-3 m-2 bg-primary">producto</div>
+                            </div>
+                            <div class="row">
+                                <div class="item col-2 bg-primary offset-1">producto</div>
+                                <div class="item col-2 bg-warning offset-1">producto</div>
+                                <div class="item col-2 bg-danger offset-1">producto</div>
+                                <div class="item col-2 bg-success offset-1">producto</div>
+                            </div>
                         </div>
                     </section>
-                    <aside class="col-3 border">
+                    <aside class="col-3 border d-none d-sm-none d-md-block">
                         <h2>Barra lateral</h2>
+                        <div class="lateral row bg-light align-items-center">
+                            <div class="col-4 bg-primary align-self-start order-3">
+                                Elemento 1
+                            </div>
+                            <div class="col-4 bg-success align-self-center order-1">
+                                Elemento 2
+                            </div>
+                            <div class="col-4 bg-warning align-self-end order-2">
+                                Elemento 3
+                            </div>
+                        </div>
                     </aside>
                 </div>
             </section>
+            <footer class="col-lg-12 bg-info pl-5">
+                Máster en CSS: Bootstrap 4  - Federico Lacabaratz &copy;
+            </footer>
         </div>
     </div>
     <script type="text/javascript" src="./jquery/jquery-3.5.1.min.js"></script>
